@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assignment 6, Task 9: Sequential Animations.">
+  <title>Task 9 · Sequential Animations</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+  <script src="scripts/task-9.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-width header-top">
+      <a class="brand" href="index.html">Assignment 6<span>jQuery · Effects &amp; Animations</span></a>
+      <p class="student">Berdibek Meiirbek<span>SE-2528</span></p>
+    </div>
+    <nav class="page-width" aria-label="Assignment tasks">
+      <ul class="task-links">
+          <li><a href="index.html">Task 0</a></li>
+          <li><a href="selectors.html">Task 1</a></li>
+          <li><a href="visibility.html">Task 2</a></li>
+          <li><a href="fade.html">Task 3</a></li>
+          <li><a href="slide.html">Task 4</a></li>
+          <li><a href="elements.html">Task 5</a></li>
+          <li><a href="attributes.html">Task 6</a></li>
+          <li><a href="form.html">Task 7</a></li>
+          <li><a href="basic-animation.html">Task 8</a></li>
+          <li><a href="sequential-animation.html" aria-current="page">Task 9</a></li>
+          <li><a href="combined-animation.html">Task 10</a></li>
+          <li><a href="accordion.html">Task 11</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-width main-content">
+    <header class="page-heading">
+      <p class="part-label">Part 4 / Animations</p>
+      <h1>Task 9. Sequential Animations</h1>
+      <p>Move right, move down, shrink, and return to the original state.</p>
+    </header>
+
+      <section class="panel" aria-label="Sequential animation demonstration">
+        <p class="sequence-label">Move right → Move down → Shrink → Return</p>
+        <div class="animation-stage">
+          <div id="sequence-box" class="animation-box">Box</div>
+        </div>
+        <div class="actions">
+          <button type="button" id="animate-sequence">Run Sequence</button>
+        </div>
+      </section>
+  </main>
+  <footer class="site-footer">
+    <div class="page-width">Web Technologies · Berdibek Meiirbek · SE-2528</div>
+  </footer>
+</body>
+</html>

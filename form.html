@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assignment 6, Task 7: Form Interaction.">
+  <title>Task 7 · Form Interaction</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+  <script src="scripts/task-7.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-width header-top">
+      <a class="brand" href="index.html">Assignment 6<span>jQuery · Effects &amp; Animations</span></a>
+      <p class="student">Berdibek Meiirbek<span>SE-2528</span></p>
+    </div>
+    <nav class="page-width" aria-label="Assignment tasks">
+      <ul class="task-links">
+          <li><a href="index.html">Task 0</a></li>
+          <li><a href="selectors.html">Task 1</a></li>
+          <li><a href="visibility.html">Task 2</a></li>
+          <li><a href="fade.html">Task 3</a></li>
+          <li><a href="slide.html">Task 4</a></li>
+          <li><a href="elements.html">Task 5</a></li>
+          <li><a href="attributes.html">Task 6</a></li>
+          <li><a href="form.html" aria-current="page">Task 7</a></li>
+          <li><a href="basic-animation.html">Task 8</a></li>
+          <li><a href="sequential-animation.html">Task 9</a></li>
+          <li><a href="combined-animation.html">Task 10</a></li>
+          <li><a href="accordion.html">Task 11</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-width main-content">
+    <header class="page-heading">
+      <p class="part-label">Part 3 / DOM Manipulation with jQuery</p>
+      <h1>Task 7. Form Interaction</h1>
+      <p>Display Name and Email below the form as the user types.</p>
+    </header>
+
+      <section class="panel narrow" aria-label="Live form interaction">
+        <form id="live-form">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com">
+          </div>
+        </form>
+        <div class="live-preview" aria-live="polite">
+          <h2>Live preview</h2>
+          <p><strong>Name:</strong> <span id="live-name">—</span></p>
+          <p><strong>Email:</strong> <span id="live-email">—</span></p>
+        </div>
+      </section>
+  </main>
+  <footer class="site-footer">
+    <div class="page-width">Web Technologies · Berdibek Meiirbek · SE-2528</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: #18324d;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.page-width {
+  width: min(100% - 40px, 1080px);
+  margin-inline: auto;
+}
+
+.site-header {
+  background: #153340;
+  color: #fff;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-block: 24px;
+}
+
+.brand {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand span,
+.student span {
+  display: block;
+  color: #c6dce4;
+  font-size: .85rem;
+  font-weight: 400;
+}
+
+.student {
+  margin: 0;
+  text-align: right;
+  font-size: .95rem;
+}
+
+.task-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0;
+  padding: 0 0 20px;
+  list-style: none;
+}
+
+.task-links a {
+  display: block;
+  padding: 8px 14px;
+  border: 1px solid #557480;
+  border-radius: 6px;
+  color: #fff;
+  font-size: .85rem;
+  text-decoration: none;
+}
+
+.task-links a:hover,
+.task-links a[aria-current="page"] {
+  border-color: #fff;
+  background: #fff;
+  color: #153340;
+}
+
+:focus-visible {
+  outline: 3px solid #d99c22;
+  outline-offset: 3px;
+}
+
+.main-content {
+  min-height: calc(100vh - 235px);
+  padding-block: 40px 56px;
+}
+
+.page-heading {
+  max-width: 850px;
+  margin-bottom: 28px;
+}
+
+.part-label {
+  margin: 0 0 8px;
+  color: #1765a8;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.65rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+h3 {
+  margin: 20px 0 0;
+  font-size: 1.05rem;
+}
+
+.page-heading > p:last-child {
+  margin: 0;
+  color: #52677d;
+}
+
+.panel {
+  padding: 28px;
+  border: 1px solid #dce5ee;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.narrow {
+  max-width: 760px;
+}
+
+.hint,
+figcaption {
+  color: #52677d;
+  font-size: .9rem;
+}
+
+.panel > p:last-child {
+  margin-bottom: 0;
+}
+
+.setup-status {
+  padding: 16px;
+  border-left: 4px solid #198754;
+  background: #eaf5ef;
+  color: #125b39;
+  font-weight: 700;
+}
+
+button {
+  padding: 10px 17px;
+  border: 1px solid #1765a8;
+  border-radius: 6px;
+  background: #1765a8;
+  color: #fff;
+  font: inherit;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #0e4e85;
+  background: #0e4e85;
+}
+
+.button-secondary {
+  border-color: #aab8c7;
+  background: #fff;
+  color: #18324d;
+}
+
+.button-secondary:hover {
+  border-color: #52677d;
+  background: #edf2f7;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.actions-first {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.selector-demo,
+.text-stage,
+.slide-panel {
+  padding: 22px;
+  border: 1px solid #c9dbf1;
+  border-radius: 8px;
+  background: #edf4ff;
+}
+
+.selector-demo p,
+.text-stage p,
+.slide-panel p {
+  margin: 0;
+}
+
+.text-stage {
+  min-height: 100px;
+}
+
+.demo-figure {
+  margin: 0;
+}
+
+.image-stage {
+  height: 320px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eaf1f7;
+}
+
+.image-stage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figcaption {
+  margin-top: 10px;
+}
+
+.destination-link {
+  margin-top: 22px;
+}
+
+.destination-link a {
+  color: #1765a8;
+  font-weight: 600;
+}
+
+.item-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.item-list li {
+  padding: 7px 0;
+}
+
+.form-field + .form-field {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #aab8c7;
+  border-radius: 6px;
+  color: #18324d;
+  font: inherit;
+}
+
+.live-preview {
+  margin-top: 28px;
+  padding: 22px;
+  border-radius: 8px;
+  background: #edf4ff;
+  overflow-wrap: anywhere;
+}
+
+.live-preview p:last-child {
+  margin-bottom: 0;
+}
+
+.animation-stage {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  border: 1px dashed #aab8c7;
+  border-radius: 8px;
+  background: #edf4ff;
+}
+
+.animation-box {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #1765a8;
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.sequence-label {
+  margin-top: 0;
+  color: #52677d;
+}
+
+.accordion-item {
+  overflow: hidden;
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.accordion-item + .accordion-item {
+  margin-top: 14px;
+}
+
+.accordion-item h2 {
+  margin: 0;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 22px;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  color: #18324d;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.accordion-button:hover,
+.accordion-button[aria-expanded="true"] {
+  background: #edf4ff;
+  color: #1765a8;
+}
+
+.accordion-button:focus-visible {
+  outline-offset: -4px;
+}
+
+.accordion-symbol {
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.accordion-panel {
+  display: none;
+  padding: 0 22px 22px;
+  background: #edf4ff;
+}
+
+.accordion-panel p {
+  margin: 0;
+}
+
+.site-footer {
+  padding-block: 20px;
+  border-top: 1px solid #dce5ee;
+  color: #52677d;
+  font-size: .85rem;
+}
+
+@media (max-width: 540px) {
+  .page-width {
+    width: calc(100% - 32px);
+  }
+
+  .header-top {
+    align-items: flex-start;
+    gap: 12px;
+    padding-block: 20px;
+  }
+
+  .brand {
+    font-size: 1.15rem;
+  }
+
+  .student {
+    max-width: 125px;
+    font-size: .8rem;
+  }
+
+  .task-links {
+    gap: 6px;
+  }
+
+  .task-links a {
+    padding: 7px 11px;
+    font-size: .8rem;
+  }
+
+  .main-content {
+    padding-block: 28px 40px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+
+  .image-stage {
+    height: 230px;
+  }
+
+  .accordion-button {
+    padding: 18px;
+  }
+
+  .accordion-panel {
+    padding: 0 18px 18px;
+  }
+}
